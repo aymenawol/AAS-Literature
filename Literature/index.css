@@ -1,5 +1,5 @@
-/* FONTS */
 @import url(../css/clash-display.css);
+
 
 /* VARIABLES */
 :root {
@@ -13,12 +13,14 @@
     --transition: all 0.5s ease;
 }
 
+
 /* RESET & HELPERS */
 body {
     font-family: var(--font-base);
     line-height: 1.7;
     color: var(--c-body);
 }
+
 
 h1, h2, h3,h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -30,29 +32,38 @@ h1, h2, h3,h4, h5, h6,
 
 
 
+
+
+
+
 a {
     text-decoration: none;
     color: var(--c-brand);
     transition: var(--transition);
 }
 
+
 a:hover {
     color: var(--c-brand-light);
 }
+
 
 img {
     max-width: 100%;
     height: auto;
 }
 
+
 .section-padding {
     padding-top: 140px;
     padding-bottom: 140px;
 }
 
+
 .theme-shadow {
     box-shadow: var(--box-shadow);
 }
+
 
 /* IMAGE ZOOM */
 .image-zoom {
@@ -60,18 +71,23 @@ img {
     /* overflow: hidden; */
 }
 
+
 .image-zoom-wrapper {
     overflow: hidden;
     position: relative;
 }
 
+
 .image-zoom-wrapper img{
      transition: var(--transition);
 }
 
+
 .image-zoom:hover .image-zoom-wrapper img {
     transform: scale(1.1);
 }
+
+
 
 
 /* NAVBAR */
@@ -79,14 +95,17 @@ img {
     box-shadow: var(--box-shadow);
 }
 
+
 .navbar-nav .nav-link {
     font-weight: 500;
     color: var(--c-dark);
 }
 
+
 .navbar-nav .nav-link.active {
     color: var(--c-brand);
 }
+
 
 .navbar-brand {
   width: 60px;
@@ -95,11 +114,15 @@ img {
   padding: 0;
 }
 
+
 .brand-text {
     margin-left: 10px; /* Adjust margin as needed */
     font-size: 18px; /* Adjust font size as needed */
     color: var(--c-dark); /* Adjust color as needed */
 }
+
+
+
 
 
 
@@ -112,11 +135,13 @@ img {
     padding: 10px 24px;
 }
 
+
 .btn-brand {
     background-color: var(--c-brand);
     border-color: var(--c-brand);
     color: white;
 }
+
 
 .btn-brand:hover {
     background-color: var(--c-brand-light);
@@ -125,18 +150,23 @@ img {
 }
 
 
+
+
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(https://www.potsdam.edu/sites/default/files/styles/optimized/public/images/news/BHM_podcasts.jpg?itok=b-UIfwkf);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(https://www.potsdam.edu/sites/default/files/styles/optimized/public/images/news/BHM_podcasts.jpg?itok=b-UIfwkf); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover;
     background-position: center;
     background-size: cover;
 }
+
+
 
 
 /* SECTION TITLE */
 .section-title {
     margin-bottom: 60px;
 }
+
 
 .section-title .line {
     width: 60px;
@@ -145,11 +175,14 @@ img {
     margin: 16px auto 24px auto;
 }
 
+
 .section-title p {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 
 /* ICONBOX */
@@ -165,12 +198,14 @@ img {
     flex: none;
 }
 
+
 /* SERVICE */
 .service {
     position: relative;
     overflow: hidden;
     z-index: 2;
 }
+
 
 .service::after {
     content: "";
@@ -184,6 +219,8 @@ img {
 }
 
 
+
+
 .service:hover::after {
     width: 100%;
     height: 100%;
@@ -191,22 +228,26 @@ img {
     z-index: -1;
 }
 
+
 .service:hover h5,
 .service:hover p {
     color: white;
 }
+
 
 .service:hover .iconbox {
     background-color: rgba(255,255,255,0.2);
     color: white;
 }
 
+
 /* COUNTER */
 #counter {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/counter.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0), rgba(var(--c-brand-rgb), 0)), url();
     background-position: center;
     background-size: cover;
 }
+
 
 /* PORTFOLIO */
 .portfolio-item .iconbox {
@@ -219,10 +260,12 @@ img {
     opacity: 0;
 }
 
+
 .portfolio-item:hover .iconbox {
     opacity: 1;
     top: 50%;
 }
+
 
 /* REVIEW */
 .review small {
@@ -231,9 +274,11 @@ img {
     color: var(--c-brand);
 }
 
+
 .review-head {
     position: relative;
 }
+
 
 .review-head::after {
     content: "";
@@ -244,6 +289,11 @@ img {
     background-color: white;
     transform: rotate(45deg);
 }
+
+
+
+
+
 
 /* TEAM */
 .team-member-content {
@@ -258,53 +308,44 @@ img {
     opacity: 0;
 }
 
+
 .team-member:hover .team-member-content {
     opacity: 1;
     bottom: 24px;
 }
 
-/* CONTACT */
-#contact {
-    position: relative;
-    z-index: 2;
-}
 
-#contact::after {
-    content: "";
-    width: 100%;
-    height: 70%;
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/counter.jpg);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
+
 
 #contact .form-control {
     border-radius: 0;
 }
+
 
 #contact .form-control:focus {
     box-shadow: none;
     border-color: var(--c-brand);
 }
 
+
 /* FOOTER */
 footer {
     padding-top: 120px;
 }
+
 
 .footer-top {
     padding-bottom: 40px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+
 .footer-bottom {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+
 
 
 footer li,
@@ -313,10 +354,12 @@ footer a {
     color: rgba(255,255,255,0.7);
 }
 
+
 footer ul {
     list-style: none;
     padding: 0;
 }
+
 
 footer .line {
     width: 40px;
@@ -325,6 +368,7 @@ footer .line {
     margin-top: 12px;
     margin-bottom: 24px;
 }
+
 
 .social-icons a {
     width: 40px;
@@ -336,10 +380,12 @@ footer .line {
     border-radius: 100px;
 }
 
+
 .social-icons a:hover {
     background-color: var(--c-brand);
     color: white;
 }
+
 
 @font-face {
   font-family: 'ClashDisplay';
@@ -350,3 +396,4 @@ footer .line {
        font-display: swap;
        font-style: normal;
 }
+
