@@ -11,4 +11,15 @@ AOS.init({
   
   });
 
+  // Slideshow script
+  var images = document.querySelectorAll('.hero img');
+  var currentIndex = 0;
+
+  function showNextSlide() {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('active');
+  }
+
+  setInterval(showNextSlide, 3000);
   

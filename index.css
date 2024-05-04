@@ -4,8 +4,8 @@
 /* VARIABLES */
 :root {
     --c-dark: #212529;
-    --c-brand: #4e57d4;
-    --c-brand-light: #6970dd;
+    --c-brand: #35270b;
+    --c-brand-light: #4d3b16;
     --c-brand-rgb: 0, 0, 0;
     --c-body: #727272;
     --font-base: "ClashDisplay", sans-serif;
@@ -102,9 +102,7 @@ img {
 }
 
 
-.navbar-nav .nav-link.active {
-    color: var(--c-brand);
-}
+
 
 
 .navbar-brand {
@@ -154,7 +152,7 @@ img {
 
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(https://www.potsdam.edu/sites/default/files/styles/optimized/public/images/news/BHM_podcasts.jpg?itok=b-UIfwkf); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover;
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(hero.JPG); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover;
     background-position: center;
     background-size: cover;
 }
@@ -400,4 +398,32 @@ footer .line {
 .portfolio-item {
     padding: 10px; 
  
+}
+
+p{
+    font-size:20px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 3.5px;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #6a3a0a; /* Change the color as needed */
+    transition: width 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    color: #964B00;
 }
